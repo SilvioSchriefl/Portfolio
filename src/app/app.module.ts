@@ -9,7 +9,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { MainComponent } from './main/main.component'; 
 
 
 
@@ -24,6 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
+    ImpressumComponent,
+    MainComponent,
     
   ],
   imports: [

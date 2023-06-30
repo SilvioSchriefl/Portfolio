@@ -6,16 +6,24 @@ header
     display: flex
     align-items: center
     justify-content: space-between
-    padding-left: 50px
-    padding-right: 50px
-    z-index: 1
-    a
-        color: #fff
-        text-decoration: none
-        font-size: 23px
-        margin-right: 20px
-        &:hover
-            color: #70E61C
+    padding-left: 100px
+    padding-right: 100px
+    z-index: 100
+    border-bottom: 1px solid #70E61C
+
+a
+    color: #fff
+    text-decoration: none
+    font-size: 23px
+    margin-right: 20px
+    background: linear-gradient(to right, #141D2F, #141D2F), linear-gradient(to right, rgba(151,71,255,1), rgba(112,230,28,1) )
+    background-size: 100% 3px, 0 3px
+    background-position: 100% 100%, 0 100%
+    background-repeat: no-repeat
+    transition: background-size 400ms
+    &:hover
+        background-size: 0 3px, 100% 3px
+
 
 .link
 
@@ -37,6 +45,6 @@ header
         content: 'i'
         color: #9747FF
     &::after
-         content: 'ı'
-         position: absolute
-         left: -1px
+        content: 'ı'
+        position: absolute
+        left: -1px
