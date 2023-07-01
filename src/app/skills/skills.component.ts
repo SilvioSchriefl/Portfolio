@@ -13,4 +13,22 @@ export class SkillsComponent {
     this.skill_images.length = 10;
   }
 
+
+  onScroll() {
+    const elements = document.querySelectorAll('.skill_images');
+    elements.forEach((element: any) => {
+      const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+          if (entry.isIntersecting ) {          
+            element.classList.add('flip-in-hor-bottom');
+            observer.unobserve(element);
+          }
+        });
+      }, {
+        threshold: 1,
+        rootMargin: '0px'
+      });
+      observer.observe(element);
+    });
+  }
 }

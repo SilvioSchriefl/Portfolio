@@ -1,0 +1,71 @@
+.main_div {
+  color: #fff;
+  background-color: #141D2F;
+  width: 100%;
+}
+
+.headline {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  width: 480px;
+}
+
+.description2 {
+  margin-top: 50px;
+  display: flex;
+  font-size: 16px;
+  width: 480px;
+}
+.description2 img {
+  margin-right: 20px;
+}
+
+.shadow {
+  position: absolute;
+  top: 750px;
+  right: 0;
+  z-index: 2;
+}
+
+.circle_div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  top: 1100px;
+  z-index: 2;
+}
+
+.about_me {
+  margin-left: 300px;
+  position: relative;
+  height: 600px;
+}
+
+.about_me_sub {
+  position: absolute;
+  z-index: 2;
+}
+
+.line {
+  width: 350px;
+  height: 4px;
+}
+
+.profil_img {
+  position: absolute;
+  width: 448px;
+  height: 443px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.profil_img img {
+  position: absolute;
+  width: 1000px;
+  top: -400px;
+  left: -315px;
+}/*# sourceMappingURL=about-me.component.css.map */

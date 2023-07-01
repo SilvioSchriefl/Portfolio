@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  border-radius: 10px;
+  height: 10px;
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgb(151, 71, 255) 0%, rgb(112, 230, 28) 100%);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #141D2F;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,122 @@
+.main_div {
+  background-color: #141D2F;
+}
+
+.vector {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  top: 392px;
+  z-index: 2;
+}
+
+.profil_photo {
+  position: absolute;
+  top: -150px;
+  left: -100px;
+  width: 1000px;
+}
+
+.profil_shadow {
+  margin-left: 100px;
+}
+
+.line {
+  width: 300px;
+  height: 4px;
+  pointer-events: none;
+}
+
+.i_am {
+  position: absolute;
+  transform: rotate(270deg);
+  font-weight: 400;
+  font-size: 64px;
+  left: -120px;
+  top: 50px;
+}
+
+.name_div {
+  position: absolute;
+  display: flex;
+  top: 300px;
+  right: 15%;
+  color: #fff;
+}
+
+.name {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: -30px;
+}
+
+.developer {
+  color: #9747FF;
+  font-size: 58px;
+  font-weight: 400px;
+}
+
+.contact {
+  font-size: 23px;
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  top: 850px;
+}
+.contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact_images {
+  display: flex;
+  align-items: center;
+}
+.contact_images img {
+  margin-right: 50px;
+  transition: 200ms;
+}
+.contact_images img:hover {
+  transform: scale(1.3);
+}
+
+.button_talk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 204px;
+  background-color: #70E61C;
+  width: 165px;
+  height: 58px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms;
+  font-size: 23px;
+}
+.button_talk:hover {
+  background-color: #9747FF;
+  transform: scale(1.1);
+}
+
+.scroll {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  position: absolute;
+  top: 800px;
+  right: 5%;
+}
+.scroll img {
+  width: 20px;
+}
+
+.scroll_text {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=introduce.component.css.map */

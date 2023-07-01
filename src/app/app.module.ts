@@ -12,7 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MainComponent } from './main/main.component'; 
-
+import { IntersectionObserverModule } from 'ngx-intersection-observer';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -31,9 +32,11 @@ import { MainComponent } from './main/main.component';
     
   ],
   imports: [
+    IntersectionObserverModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.footer {
+  border-top: 4px solid #70E61C;
+  background-color: #141D2F;
+  height: 291px;
+  color: #fff;
+  padding: 0px 300px 0px 300px;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
+  font-weight: 900;
+  font-style: Black;
+  letter-spacing: 2px;
+}
+.logo p {
+  color: #70E61C;
+}
+
+.i {
+  position: relative;
+}
+.i::before {
+  content: "i";
+  color: #9747FF;
+}
+.i::after {
+  content: "ı";
+  position: absolute;
+  left: -1px;
+}
+
+.footer_sub {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_sub span {
+  font-size: 23px;
+}
+.footer_sub img {
+  transition: 200ms;
+  margin-right: 30px;
+}
+.footer_sub img:hover {
+  transform: scale(1.2);
+}
+
+.impressum {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.impressum:hover {
+  color: #70E61C;
+}/*# sourceMappingURL=footer.component.css.map */

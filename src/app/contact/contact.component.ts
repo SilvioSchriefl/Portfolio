@@ -56,4 +56,28 @@ export class ContactComponent {
       this.email_valid = false
     } , 5100);
   }
+
+  onScroll() {
+    const elements = document.querySelectorAll('.input_div, .got_problem_div');
+    elements.forEach((element: any) => {
+      const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+          console.log(entry.target.getAttribute('class'));
+
+          if (entry.isIntersecting && entry.target.getAttribute('class') == 'got_problem_div') {       
+            element.classList.add('bounce-in-left');
+            observer.unobserve(element);
+          }
+          if (entry.isIntersecting && entry.target.getAttribute('class') == 'input_div ng-untouched ng-pristine ng-valid') {       
+            element.classList.add('scale-in-center');
+            observer.unobserve(element);
+          }
+        });
+      }, {
+        threshold: 0.2,
+        rootMargin: '0px'
+      });
+      observer.observe(element);
+    });
+  }
 }

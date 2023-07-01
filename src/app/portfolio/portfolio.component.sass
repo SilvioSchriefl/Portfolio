@@ -23,7 +23,7 @@
         height: 4px
 
 .description
-    margin-left: calc( 52% - 308px )
+    margin-left: calc( 52% - 338px )
     margin-bottom: 100px
 
 .projects_div
@@ -36,6 +36,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    transition: 300ms
 
 .buttons
     display: flex
@@ -92,6 +93,54 @@
     right: 0
     top: 1800px
 
-        
+.slide_in_right
+    -webkit-animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 
+.slide_in_left
+    -webkit-animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 
+@-webkit-keyframes slide-in-right
+  0% 
+    -webkit-transform: translateX(1000px)
+    transform: translateX(1000px)
+    opacity: 0
+
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes slide-in-right
+    0%
+        -webkit-transform: translateX(1000px)
+        transform: translateX(1000px)
+        opacity: 0
+
+    100%
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+        opacity: 1
+
+@-webkit-keyframes slide-in-left
+  0% 
+    -webkit-transform: translateX(-1000px)
+    transform: translateX(-1000px)
+    opacity: 0
+
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes slide-in-left
+    0%
+        -webkit-transform: translateX(-1000px)
+        transform: translateX(-1000px)
+        opacity: 0
+
+    100%
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+        opacity: 1

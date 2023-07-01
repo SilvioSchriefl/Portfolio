@@ -4,7 +4,7 @@
         <span>Contact</span>
     </div>
     <div class="form_main">
-        <div class="got_problem_div">
+        <div infiniteScroll (scrolled)="onScroll()" class="got_problem_div" #object>
             <span class="sub_headline">Got a problem to solve?</span>
             <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
                 your projects with my work.</span>
@@ -13,7 +13,7 @@
                 <p>Contact me!</p>
             </div>
         </div>
-        <form class="input_div" (click)="$event.stopPropagation()" (ngSubmit)="sendMessage()">
+        <form  infiniteScroll (scrolled)="onScroll()" class="input_div" (click)="$event.stopPropagation()" (ngSubmit)="sendMessage()">
             <div class="input_field">
                 <input name="name" (focus)="setFocus('name')" placeholder="Your name" type="text" maxlength="30" [(ngModel)]="name" (ngModelChange)="changeValue($event, 'name')" [class.border_red]="name_active && name.length == 0" [class.border_green]="name_active && name.length > 0">
                 <img [class.visible]="name_active && name.length == 0" src="/assets/img/no.png" alt="">

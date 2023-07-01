@@ -8,15 +8,15 @@
     </div>
     <div class="description">This page is a sample of my work - please feel free to try them out.</div>
     <div class="projects_div">
-        <div class="project" *ngFor="let project of projects.name; let i = index" [class.flex_direction]="i % 2 != 0">
+        <div infiniteScroll (scrolled)="onScroll()" class="project" *ngFor="let project of projects.name; let i = index" [class.flex_direction]="i % 2 != 0" #object>
             <img src="/assets/img/{{ projects.image[i] }}" alt="">
             <div class="project_detail">
                 <div class="name">{{ projects.name[i] }}</div>
                 <div class="language">{{ projects.languages[i] }}</div>
                 <div>{{ projects.description[i] }}</div>
                 <div class="buttons">
-                    <div class="button_test">Live test</div>
-                    <div class="button_git">Github</div>
+                    <div class="button_test" (click)="openSite(i)" >Live test</div>
+                    <div class="button_git" (click)="openGit(i)" >Github</div>
                 </div>
             </div>
         </div>

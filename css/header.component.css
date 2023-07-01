@@ -1,0 +1,56 @@
+@charset "UTF-8";
+header {
+  height: 150px;
+  background-color: #141D2F;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+  z-index: 100;
+  border-bottom: 1px solid #70E61C;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+  margin-right: 20px;
+  background: linear-gradient(to right, #141D2F, #141D2F), linear-gradient(to right, rgb(151, 71, 255), rgb(112, 230, 28));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
+  font-weight: 900;
+  font-style: Black;
+  letter-spacing: 2px;
+}
+.logo p {
+  color: #70E61C;
+}
+
+.i {
+  position: relative;
+}
+.i::before {
+  content: "i";
+  color: #9747FF;
+}
+.i::after {
+  content: "ı";
+  position: absolute;
+  left: -1px;
+}/*# sourceMappingURL=header.component.css.map */
