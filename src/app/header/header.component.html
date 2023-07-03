@@ -2,11 +2,25 @@
     <div class="logo">
         S<div class="i"></div>lvi<p>o</p>
     </div>
-    <div class="item blue"></div>
     <div class="link">
-        <a href="">About me</a>
-        <a href="">Skills</a>
-        <a href="#portfolio">Portfolio</a>
         <a routerLink="">Home</a>
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
     </div>
+
+    <nav role="navigation" class="d_none">
+        <div id="menuToggle" (click)="setOverflowHidden()">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="menu">
+                <a routerLink="">Home</a>
+                <a href="#about">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+        </div>
+    </nav>
 </header>

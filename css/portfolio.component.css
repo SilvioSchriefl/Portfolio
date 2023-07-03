@@ -43,6 +43,7 @@
   align-items: center;
   justify-content: space-between;
   transition: 300ms;
+  opacity: 0;
 }
 
 .buttons {

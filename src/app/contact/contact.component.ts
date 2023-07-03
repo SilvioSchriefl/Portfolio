@@ -40,8 +40,21 @@ export class ContactComponent {
     if (inputfield == 'message') this.message_active = true
   }
 
-  sendMessage() {
+  async sendMessage() {
     if ( !this.email_valid || this.name.length < 1 || this.message.length < 1) return;
+    this.startAnimation();
+    let formData = new FormData()
+    formData.append('name', this.name);
+    formData.append('email', this.email_text);
+    formData.append('message', this.message);
+    await fetch("https://www.silvio-schriefl.de/contact/send_mail.php",{
+      method: "POST",
+      body: formData
+    } )
+  }
+
+
+  startAnimation() {
     this.slide_in = true
     setTimeout(() => this.slide_in2 = true, 600);
     setTimeout(() => {
@@ -57,25 +70,19 @@ export class ContactComponent {
     } , 5100);
   }
 
+
   onScroll() {
     const elements = document.querySelectorAll('.input_div, .got_problem_div');
     elements.forEach((element: any) => {
       const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry: IntersectionObserverEntry) => {
-          console.log(entry.target.getAttribute('class'));
-
-          if (entry.isIntersecting && entry.target.getAttribute('class') == 'got_problem_div') {       
-            element.classList.add('bounce-in-left');
-            observer.unobserve(element);
-          }
-          if (entry.isIntersecting && entry.target.getAttribute('class') == 'input_div ng-untouched ng-pristine ng-valid') {       
-            element.classList.add('scale-in-center');
-            observer.unobserve(element);
-          }
+          if (entry.isIntersecting && entry.target.getAttribute('class') == 'got_problem_div') element.classList.add('bounce-in-left');
+          if (!entry.isIntersecting && entry.target.getAttribute('class') == 'got_problem_div bounce-in-left') element.classList.remove('bounce-in-left');
+          if (entry.isIntersecting && entry.target.getAttribute('class') == 'input_div ng-untouched ng-pristine ng-valid')  element.classList.add('scale-in-center');
+          if (!entry.isIntersecting && entry.target.getAttribute('class') == 'input_div ng-untouched ng-pristine ng-valid scale-in-center')  element.classList.remove('scale-in-center');
         });
       }, {
-        threshold: 0.2,
-        rootMargin: '0px'
+        threshold: 0.0,
       });
       observer.observe(element);
     });

@@ -21,11 +21,13 @@ export class SkillsComponent {
         entries.forEach((entry: IntersectionObserverEntry) => {
           if (entry.isIntersecting ) {          
             element.classList.add('flip-in-hor-bottom');
-            observer.unobserve(element);
+          }
+          if (!entry.isIntersecting ) {          
+            element.classList.remove('flip-in-hor-bottom');
           }
         });
       }, {
-        threshold: 1,
+        threshold: 0.5,
         rootMargin: '0px'
       });
       observer.observe(element);

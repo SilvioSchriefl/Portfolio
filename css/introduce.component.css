@@ -81,6 +81,7 @@
 }
 
 .button_talk {
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,4 +120,20 @@
 
 .scroll_text {
   transform: rotate(90deg);
+}
+
+.arrow {
+  animation: bounce 0.5s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=introduce.component.css.map */

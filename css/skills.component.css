@@ -78,6 +78,10 @@
   animation: slit-in-vertical 0.45s ease-out both;
 }
 
+a {
+  text-decoration: none;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0px);

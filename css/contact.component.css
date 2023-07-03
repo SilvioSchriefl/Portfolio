@@ -301,8 +301,8 @@ textarea:placeholder-shown {
 }
 @keyframes bounce-in-left {
   0% {
-    -webkit-transform: translateX(-600px);
-    transform: translateX(-600px);
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
@@ -373,5 +373,128 @@ textarea:placeholder-shown {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1850px) {
+  .form_main {
+    margin: 100px 200px 0px 200px;
+  }
+  .headline img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .form_main {
+    margin: 100px 100px 0px 150px;
+  }
+  .headline {
+    gap: 40px;
+  }
+  .headline img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .form_main {
+    margin: 100px 50px 0px 65px;
+  }
+  .purple_line {
+    display: none;
+  }
+  .green_line {
+    display: block;
+    width: 100% !important;
+  }
+  .headline {
+    justify-content: center;
+    margin-left: calc(50% - 110px);
+  }
+  .blue_line {
+    display: block;
+    width: 130px;
+    height: 4px;
+  }
+  .blue_line_div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: -150px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .form_main {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0 0 0;
+  }
+  .got_problem_div {
+    width: 100%;
+  }
+  .blue_line_div {
+    margin-left: 0;
+  }
+  .blue_line {
+    width: calc(50% - 210px);
+  }
+  .headline {
+    margin-left: 51%;
+  }
+  .contact_description {
+    margin: 0 200px 0 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .arrow_up {
+    margin-right: 120px;
+  }
+  .send_button {
+    margin-left: 0;
+  }
+  .contact_me_div {
+    flex-direction: column;
+  }
+  .contact_description {
+    margin: 0 100px 0 100px;
+  }
+  .input_div {
+    align-items: center;
+  }
+  .input_div input {
+    width: 500px;
+  }
+  .input_div textarea {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contact_description {
+    margin: 0 50px 0 50px;
+  }
+  .arrow_up {
+    margin-right: 280px;
+  }
+  .input_div {
+    align-items: center;
+  }
+  .input_div input {
+    width: 350px;
+  }
+  .input_div textarea {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .input_div {
+    align-items: center;
+  }
+  .input_div input {
+    width: 300px;
+  }
+  .input_div textarea {
+    width: 300px;
+  }
+  .arrow_up {
+    margin-right: 330px;
   }
 }/*# sourceMappingURL=contact.component.css.map */

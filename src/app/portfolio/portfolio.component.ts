@@ -28,14 +28,10 @@ export class PortfolioComponent {
     elements.forEach((element: any) => {
       const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry: IntersectionObserverEntry) => {
-          if (entry.isIntersecting && entry.target.getAttribute('class') == 'project') {
-            element.classList.add('slide_in_right');
-            observer.unobserve(element);
-          }
-          if (entry.isIntersecting && entry.target.getAttribute('class') == 'project flex_direction') {
-            element.classList.add('slide_in_left');
-            observer.unobserve(element);
-          }
+          if (entry.isIntersecting && entry.target.getAttribute('class') == 'project')  element.classList.add('slide_in_right');  
+          if (!entry.isIntersecting && entry.target.getAttribute('class') == 'project slide_in_right') element.classList.remove('slide_in_right'); 
+          if (entry.isIntersecting && entry.target.getAttribute('class') == 'project flex_direction') element.classList.add('slide_in_left');  
+          if (!entry.isIntersecting && entry.target.getAttribute('class') == 'project flex_direction slide_in_left') element.classList.remove('slide_in_left');    
         });
       }, {
         threshold: 0.2,

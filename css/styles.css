@@ -18,4 +18,8 @@ body::-webkit-scrollbar-track {
 
 html {
   scroll-behavior: smooth;
+}
+
+.d_none {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
