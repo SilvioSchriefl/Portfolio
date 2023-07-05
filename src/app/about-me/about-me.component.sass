@@ -2,22 +2,18 @@
     color: #fff
     background-color: #141D2F
     width: 100%
-    
 
 .headline
     font-size: 90px
     font-weight: 700
-    
 
 .description
     font-size: 16px
-    width: 480px
 
 .description2
     margin-top: 50px
     display: flex
     font-size: 16px
-    width: 480px
     img
         margin-right: 20px
 
@@ -41,6 +37,7 @@
     height: 600px
 
 .about_me_sub
+    width: 480px
     position: absolute
     z-index: 2
 
@@ -59,7 +56,52 @@
         width: 1000px
         top: -400px
         left: -315px
-   
 
-    
+@media screen and ( max-width: 1700px )
 
+    .about_me
+        margin-left: 10%
+
+    .line
+        width: 160px
+
+@media screen and ( max-width: 1250px )
+
+    .circle_div
+        display: none
+
+    .about_me
+        margin: 0
+
+    .about_me_sub
+        left: calc( 50% - 240px )
+
+@media screen and ( max-width: 750px )
+
+    .headline
+        font-size: 45px
+
+    .description
+        margin-top: 60px
+
+@media screen and ( max-width: 550px )
+
+    .about_me_sub
+        width: 80%
+        left: calc( 50% - 180px )
+
+@media screen and ( max-width: 460px )
+
+    .main_div
+        padding-bottom: 150px
+
+@media screen and ( max-width: 430px )
+
+    .about_me_sub
+        width: 80%
+        left: calc( 50% - 145px )
+
+@media screen and ( max-width: 380px )
+
+    .main_div
+        padding-bottom: 230px

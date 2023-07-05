@@ -19,6 +19,7 @@
     letter-spacing: 2px
     p
         color: #70E61C
+        margin: 0
 
 .i
     position: relative
@@ -31,11 +32,11 @@
          left: -1px
 
 .footer_sub
-    margin-top: 60px 
+    position: relative
+    margin-top: 120px 
     display: flex
     align-items: center
     justify-content: space-between
-    
     span
         font-size: 23px
     img
@@ -44,10 +45,30 @@
         &:hover
             transform: scale(1.2)
     
-
 .impressum
+    position: absolute
+    top: 60px
+    left: 0
     color: #fff
     font-size: 16px
     font-weight: 400
     &:hover
         color: #70E61C
+
+@media screen and ( max-width: 1850px )
+    footer
+        padding: 0 5% 0 5%  !important  
+
+@media screen and ( max-width: 750px )
+
+    .footer_sub
+        flex-direction: column
+        margin-top: 50px
+        gap: 15px
+
+    .impressum
+        left: unset
+        top: 180px
+
+    .icons
+        margin-left: 40px

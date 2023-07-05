@@ -301,8 +301,8 @@ textarea:placeholder-shown {
 }
 @keyframes bounce-in-left {
   0% {
-    -webkit-transform: translateX(-500px);
-    transform: translateX(-500px);
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
@@ -467,6 +467,11 @@ textarea:placeholder-shown {
     width: 500px;
   }
 }
+@media screen and (max-width: 750px) {
+  .headline {
+    font-size: 45px;
+  }
+}
 @media screen and (max-width: 550px) {
   .contact_description {
     margin: 0 50px 0 50px;
@@ -482,6 +487,9 @@ textarea:placeholder-shown {
   }
   .input_div textarea {
     width: 350px;
+  }
+  .sub_headline {
+    font-size: 23px;
   }
 }
 @media screen and (max-width: 400px) {

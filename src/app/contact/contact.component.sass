@@ -262,8 +262,8 @@ textarea
 
 @keyframes bounce-in-left
     0%
-        -webkit-transform: translateX(-500px)
-        transform: translateX(-500px)
+        -webkit-transform: translateX(-40%)
+        transform: translateX(-40%)
         -webkit-animation-timing-function: ease-in
         animation-timing-function: ease-in
         opacity: 0
@@ -415,6 +415,11 @@ textarea
             width: 500px
         textarea
             width: 500px
+    
+@media screen and ( max-width: 750px )
+
+    .headline
+        font-size: 45px
 
 @media screen and ( max-width: 550px )
 
@@ -430,6 +435,9 @@ textarea
             width: 350px
         textarea
             width: 350px
+
+    .sub_headline
+        font-size: 23px
 
 @media screen and ( max-width: 400px )
 

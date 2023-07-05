@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: #141D2F;
 }
 body::-webkit-scrollbar {
   border-radius: 10px;
