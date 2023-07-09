@@ -8,19 +8,14 @@
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
     </div>
-
-    <nav role="navigation" class="d_none">
-        <div id="menuToggle" (click)="setOverflowHidden()">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <div id="menu">
-                <a routerLink="">Home</a>
-                <a href="#about">About me</a>
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-            </div>
-        </div>
-    </nav>
+    <div [class.hamburger-active]="menu_open" id="hamburger" class="hamburger-icon-container d_none" (click)="openMenu()">
+        <span class="hamburger-icon"></span>
+    </div>
+    <div class="mobile_menu" [class.slide_in]="menu_open" [class.d_none]="!menu_open">
+        <a (click)="closeMenu()" routerLink="">Home</a>
+        <a (click)="closeMenu()" href="#about">About me</a>
+        <a (click)="closeMenu()" href="#skills">Skills</a>
+        <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+        <a (click)="closeMenu()" class="impressum" routerLink="./impressum">Impressum</a>
+    </div>
 </header>

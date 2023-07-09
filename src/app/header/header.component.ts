@@ -7,9 +7,22 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  menu_open:boolean = false
+  menu_open: boolean = false;
 
-  setOverflowHidden() {
-    document.body.classList.add('overflow_hidden');
+  openMenu() {
+    if (!this.menu_open) {
+      this.menu_open = true
+      document.body.style.overflowY = 'hidden';
+    }
+    else {
+      this.menu_open = false
+      document.body.style.overflowY = '';
+    }
+  }
+
+
+  closeMenu() {
+    this.menu_open = false
+    document.body.style.overflowY = '';
   }
 }
