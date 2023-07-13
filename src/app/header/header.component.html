@@ -6,16 +6,19 @@
         <a routerLink="">Home</a>
         <a href="#about">About me</a>
         <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a  href="#portfolio">Portfolio</a>
     </div>
-    <div [class.hamburger-active]="menu_open" id="hamburger" class="hamburger-icon-container d_none" (click)="openMenu()">
+    <div [class.hamburger-active]="menu_open" id="hamburger" class="hamburger-icon-container d_none"
+        (click)="openMenu()">
         <span class="hamburger-icon"></span>
     </div>
     <div class="mobile_menu" [class.slide_in]="menu_open" [class.d_none]="!menu_open">
-        <a (click)="closeMenu()" routerLink="">Home</a>
-        <a (click)="closeMenu()" href="#about">About me</a>
-        <a (click)="closeMenu()" href="#skills">Skills</a>
-        <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
-        <a (click)="closeMenu()" class="impressum" routerLink="./impressum">Impressum</a>
+        <div class="menu_mobile_sub">
+            <a (click)="closeMenu()" routerLink="">Home</a>
+            <a (click)="closeMenu()" href="#about">About me</a>
+            <a (click)="closeMenu()" href="#skills">Skills</a>
+            <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+            <a (click)="closeMenu()" href="#contact">Contact</a>
+        </div>
     </div>
 </header>

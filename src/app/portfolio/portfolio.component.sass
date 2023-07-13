@@ -1,4 +1,5 @@
 .main_div
+    scroll-padding-margin: 500px
     position: relative
     background-color: #141D2F
     color: #fff
@@ -6,6 +7,13 @@
     background-image: url("/assets/img/Purple shadow 3.png")
     background-repeat: no-repeat
     background-position: left 0px top 1400px
+
+#portfolio:before
+    display: block
+    content: " "
+    margin-top: -200px
+    height: 200px
+    visibility: hidden
 
 .headline
     margin-left: calc( 50% - 308px )
@@ -32,6 +40,7 @@
     align-items: center
 
 .project
+    z-index: 1
     width: 60%
     display: flex
     align-items: center
@@ -74,6 +83,7 @@
         background-color: #70E61C
 
 .button_git
+    font-size: 23px
     display: flex
     justify-content: center
     align-items: center
@@ -177,7 +187,7 @@
         margin-left: calc(50% - 209px)
 
     .main_div
-        background-position: left -100px top 800px
+        background-position: left -200px top 1000px
 
     .description
         margin-left: 0

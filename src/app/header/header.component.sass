@@ -6,8 +6,8 @@ header
     display: flex
     align-items: center
     justify-content: space-between
-    padding-left: 10%
-    padding-right: 10%
+    padding-left: 300px
+    padding-right: 330px
     z-index: 100
     border-bottom: 1px solid #70E61C
 
@@ -82,18 +82,24 @@ a
     color: #fff
     position: fixed
     background-color: #141D2FCC
-    top: 100px
-    height: 152vh
+    top: 0
+    margin-top: 151px
+    height: 100%
     width: 100%
     left: 0
     z-index: 11
     display: flex
-    flex-direction: column
+    justify-content: center
     align-items: center
-    padding-top: 300px
-    gap: 20px
     transition: 300ms
     transform: translateX(100%)
+
+.menu_mobile_sub
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+    margin-bottom: 39%
     a
         background-size: 100% 0px, 0 0px
         margin-left: 36px
@@ -111,8 +117,15 @@ a
 
 .hamburger-active .hamburger-icon:before
     transform: rotate(90deg)
+   
 
-@media screen and ( max-width: 800px )
+@media screen and ( max-width: 1750px )
+
+    header
+        padding-left: 10%
+        padding-right: 10%
+
+@media screen and ( max-width: 900px )
 
     .link
         display: none

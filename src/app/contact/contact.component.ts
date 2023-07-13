@@ -23,6 +23,7 @@ export class ContactComponent {
   regex = new RegExp('^[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$');
   slide_in:boolean = false
   slide_in2:boolean = false
+  form_valid:boolean = false
 
 
   changeValue(value: any, inputfield: string) {
@@ -32,6 +33,8 @@ export class ContactComponent {
       this.email_valid = this.regex.test(value)
     }
     if (inputfield == 'message') this.message = value
+    if ( this.email_valid && this.name.length > 1 && this.message.length > 1) this.form_valid = true
+    if ( !this.email_valid || this.name.length < 1 || this.message.length < 1) this.form_valid = false
   }
 
   setFocus(inputfield: string) {
@@ -67,6 +70,7 @@ export class ContactComponent {
       this.slide_in = false
       this.slide_in2 = false
       this.email_valid = false
+      this.form_valid = false
     } , 5100);
   }
 
@@ -86,5 +90,10 @@ export class ContactComponent {
       });
       observer.observe(element);
     });
+  }
+
+
+  scrollUp() {
+    location.href = "#header";
   }
 }

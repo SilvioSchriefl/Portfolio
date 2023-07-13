@@ -34,7 +34,7 @@ export class PortfolioComponent {
           if (!entry.isIntersecting && entry.target.getAttribute('class') == 'project flex_direction slide_in_left') element.classList.remove('slide_in_left');    
         });
       }, {
-        threshold: 0.2,
+        threshold: 0.3,
         rootMargin: '0px'
       });
       observer.observe(element);

@@ -1,20 +1,21 @@
 .main_div
+    z-index: 1
     position: relative
     background-color: #141D2F
     color: #fff
     width: 100%
     display: flex
-    padding-top: 200px
     justify-content: space-between
     background-image: url("/assets/img/Green shadow 2 (1).png")
     background-repeat: no-repeat
-    background-position: left 0px top 100px
+    background-position: left 0px top 50px
+    padding-top: 200px
     padding-bottom: 200px
-
+    
 .skill_images
     box-sizing: border-box
     opacity: 0
-    margin-left: 10%
+    margin-left: 300px
     width: 800px
     img
         margin-right: 80px
@@ -33,9 +34,10 @@
     display: flex
     align-items: center
     gap: 30px
+    text-align: center
 
 .line
-    width: 300px
+    width: 350px
     height: 4px
 
 .button_touch
@@ -102,7 +104,7 @@ a
     54%
         -webkit-transform: translateZ(-160px) rotateY(87deg)
         transform: translateZ(-160px) rotateY(87deg)
-        opacity: 1 
+        opacity: 1
 
     100%
         -webkit-transform: translateZ(0) rotateY(0)
@@ -115,20 +117,23 @@ a
         padding-bottom: 300px
 
     .my_skills_div
+        z-index: 5
         width: 100%
         justify-content: center
+
     .description
         width: unset
+        align-items: flex-start
         span
             width: 300px
-            margin: 75px
+            margin: 20px 75px 75px 154px
 
     .headline
         flex-direction: row-reverse
         justify-content: flex-end
-    
+
     .line
-        width: 100px
+        width: 120px
 
     .button_touch
         position: absolute
@@ -137,19 +142,27 @@ a
 
 @media screen and ( max-width: 1200px )
 
-    .skill_images 
+    .skill_images
         margin-left: 15%
-   
+
 @media screen and ( max-width: 1000px )
 
-    .skill_images 
+    .skill_images
         margin-left: 20%
         width: 100%
 
+    .button_touch
+        top: 900px
+
+@media screen and ( max-width: 850px )
+
+    .button_touch
+        top: 1000px
+
 @media screen and ( max-width: 750px )
 
-    .skill_images 
-        
+    .skill_images
+
         margin: 0
         padding: 0 40px 0 120px
         box-sizing: border-box
@@ -161,36 +174,46 @@ a
         font-size: 45px
 
     .button_touch
-        top: 920px
+        top: 790px
+
+@media screen and ( max-width: 700px )
+
+    .button_touch
+        top: 900px
 
 @media screen and ( max-width: 620px )
 
     .skill_images
-         padding: 0 0px 0 11%
+        padding: 0 0px 0 11%
 
 @media screen and ( max-width: 500px )
 
     .skill_images
-         padding: 0 0px 0 16%
-         img
+        padding: 0 0px 0 16%
+        img
             margin-right: 20px
             margin-top: 0px
+
+    .line
+        width: 30px
+
+    .description
+        span
+            margin-left: 60px
+            margin-top: 20px
 
 @media screen and ( max-width: 440px )
 
     .skill_images
-         padding: 0 0px 0 14%
-        
+        padding: 0 0px 0 14%
+
 @media screen and ( max-width: 430px )
 
     .skill_images
-         padding: 0 0px 0 16%
+        padding: 0 0px 0 16%
 
     .button_touch
         top: 1020px
 
     .line
         width: 70px
-        
-        
-    

@@ -49,9 +49,9 @@
                 <img [class.visible]="message.length > 0" src="/assets/img/yes.png" alt="">
                 <span [class.visible]="message_active && message.length == 0" class="hide">Your message is empty</span>
             </div>
-            <button [class.scale-out-horizontal]="slide_in" class="send_button" type="submit">Send message
+            <button [class.dend_button_disabled]="!form_valid" [class.scale-out-horizontal]="slide_in" class="send_button" type="submit">Send message
                 :&rpar;</button>
-            <a href="#header"><img class="arrow_up" src="/assets/img/arrow_up.png" alt=""></a>
+            <img (click)="scrollUp()" class="arrow_up" src="/assets/img/arrow_up.png" alt="">
         </form>
     </div>
 </div>
