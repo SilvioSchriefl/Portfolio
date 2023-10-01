@@ -16,7 +16,7 @@ export class PortfolioComponent {
     threshold: 1.0,
   };
   projects = {
-    name: ['Join', 'El Pollo Loco', 'Simple CRM', 'Ring of fire'],
+    name: ['Join', 'El Pollo Loco', 'DA-Bubble', 'Ring of fire'],
     image: ['join photo.png', 'Pollo loco.png', 'DA-Bubble.png', 'ring.png'],
     languages: ['Angular | TypeScript | HTML | CSS | Firebase', 'Javascript | HTML | CSS', 'Angular | TypeScript | HTML | CSS | Firebase', 'Angular | Typescript | HTML | CSS | Firebase'],
     description: ['Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.', 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer chicken.', 'DA-Bubble is a team communication platform that simplifies group messaging and collaboration. It allows teams to communicate in real-time and share files efficiently.', 'Inspired by the card game "Ring of fire", the application provides a great platform to play the game with friends located away from you. Just insert the name, select your icon character and pull the card. Always serve alcohol with moderation!'],
