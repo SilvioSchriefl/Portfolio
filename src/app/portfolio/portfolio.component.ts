@@ -52,7 +52,7 @@ export class PortfolioComponent {
   openGit(i: number) {
     if (i == 0) window.open('https://github.com/SilvioSchriefl/join.git', '_blank')
     if (i == 1) window.open('https://github.com/SilvioSchriefl/El-Pollo-Loco.git', '_blank')
-    if (i == 2) window.open('https://github.com/SilvioSchriefl/DABubble.git', '_blank')
+    if (i == 2) window.open('https://github.com/SilvioSchriefl/DA-Bubble.git', '_blank')
     if (i == 3) window.open('https://github.com/SilvioSchriefl/Ring-of-Fire.git', '_blank')
   }
 }
