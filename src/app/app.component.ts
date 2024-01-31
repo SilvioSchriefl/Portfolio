@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Silvio Schriefl';
+
+  constructor() {
+    document.title = 'Silvio Schriefl';
+  }
 }

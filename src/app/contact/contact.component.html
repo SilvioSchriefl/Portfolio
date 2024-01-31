@@ -40,7 +40,7 @@
                     address</span>
             </div>
             <div class="input_field">
-                <div [class.scale-in-hor-center]="slide_in2" class="sent">The message has been sent successfully</div>
+                <div *ngIf="slide_in2" [class.scale-in-hor-center]="slide_in2" class="sent">The message has been sent successfully</div>
                 <textarea (focus)="setFocus('message')" placeholder="Your message" type="textarea" name='message'
                     [(ngModel)]="message" (ngModelChange)="changeValue($event, 'message')"
                     [class.border_red]="message_active && message.length == 0"
