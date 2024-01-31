@@ -16,10 +16,11 @@ export class PortfolioComponent {
     threshold: 1.0,
   };
   projects = {
-    name: ['Videoflix', 'El Pollo Loco', 'DA-Bubble', 'Ring of fire', 'Join'],
-    image: ['videoflix.png', 'Pollo loco.png', 'DA-Bubble.png', 'ring.png', 'join photo.png'],
-    languages: ['Angular | Typescript | HTML | CSS',  'Javascript | HTML | CSS', 'Angular | TypeScript | HTML | CSS | Firebase', 'Angular | TypeScript | HTML | CSS | Firebase', 'Angular | Typescript | HTML | CSS'],
-    description: ["Videoflix is ​​a video platform where you can watch current film trailers. Netflix's little brother", 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer chicken.',  'DA-Bubble is a team communication platform that simplifies group messaging and collaboration. It allows teams to communicate in real-time and share files efficiently.', 'Inspired by the card game "Ring of fire", the application provides a great platform to play the game with friends located away from you. Just insert the name, select your icon character and pull the card. Always serve alcohol with moderation!', 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'],
+    name: ['Videoflix', 'Join', 'El Pollo Loco', 'DA-Bubble', 'Ring of fire'],
+    image: ['videoflix.png', 'join photo.png', 'Pollo loco.png', 'DA-Bubble.png', 'ring.png'],
+    languages: ['Angular | Typescript | HTML | CSS', 'Angular | Typescript | HTML | CSS',  'Javascript | HTML | CSS', 'Angular | TypeScript | HTML | CSS | Firebase', 'Angular | TypeScript | HTML | CSS | Firebase'],
+    description: ["Videoflix is ​​a video platform where you can watch current film trailers. Netflix's little brother" , 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.', 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer chicken.',  'DA-Bubble is a team communication platform that simplifies group messaging and collaboration. It allows teams to communicate in real-time and share files efficiently.', 'Inspired by the card game "Ring of fire", the application provides a great platform to play the game with friends located away from you. Just insert the name, select your icon character and pull the card. Always serve alcohol with moderation!'],
+    backend: [true, true, false, false, false],
   }
 
 
@@ -57,7 +58,12 @@ export class PortfolioComponent {
     if (i == 2) window.open('https://github.com/SilvioSchriefl/El-Pollo-Loco.git', '_blank')
     if (i == 3) window.open('https://github.com/SilvioSchriefl/DA-Bubble.git', '_blank')
     if (i == 4) window.open('https://github.com/SilvioSchriefl/Ring-of-Fire.git', '_blank')
-    
+  }
+
+
+  openBackEnd(i: number) {
+    if (i == 0) window.open('https://github.com/SilvioSchriefl/backend_videoflix.git/', '_blank')
+    if (i == 1) window.open('https://github.com/SilvioSchriefl/Join_Backend.git', '_blank')
   }
 }
 

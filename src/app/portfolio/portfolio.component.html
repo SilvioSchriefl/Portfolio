@@ -16,7 +16,11 @@
                 <div>{{ projects.description[i] }}</div>
                 <div class="buttons">
                     <div class="button_test" (click)="openSite(i)" >Live test</div>
-                    <div class="button_git" (click)="openGit(i)" >Github</div>
+                    <div *ngIf="!projects.backend[i]" class="button_git" (click)="openGit(i)" >Github</div>
+                    <div *ngIf="projects.backend[i]" class="button_git backend">
+                        <span (click)="openGit(i)">Front-End</span>
+                        <span (click)="openBackEnd(i)">Back-End</span>
+                    </div>
                 </div>
             </div>
         </div>
