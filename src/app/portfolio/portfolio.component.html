@@ -15,7 +15,7 @@
                 <div class="language">{{ projects.languages[i] }}</div>
                 <div>{{ projects.description[i] }}</div>
                 <div class="buttons">
-                    <div class="button_test" (click)="openSite(i)" >Live test</div>
+                    <div *ngIf="projects.live[i]" class="button_test" (click)="openSite(i)" >Live test</div>
                     <div *ngIf="!projects.backend[i]" class="button_git" (click)="openGit(i)" >Github</div>
                     <div *ngIf="projects.backend[i]" class="button_git backend">
                         <span (click)="openGit(i)">Front-End</span>

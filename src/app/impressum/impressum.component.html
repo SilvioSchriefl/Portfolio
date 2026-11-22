@@ -1,7 +1,7 @@
 <app-header id="header"></app-header>
 <div class='impressum'>
     <h1>Impressum</h1>
-    <p>Angaben gemäß § 5 TMG</p>
+    <p>Angaben gemäß § 5 DDG</p>
     <p>Silvio Schriefl <br>
         Fritz-Schäffer-Str. 36<br>
         83104 Tuntenhausen <br>
@@ -11,7 +11,7 @@
     </p>
     <p><strong>Kontakt:</strong> <br>
         Telefon: 0173-2419555<br>
-        E-Mail: <a href='mailto:silvio.schriefl@email.de'>silvio.schriefl@email.de</a><br></p>
+        E-Mail: <a [href]="'mailto:' + contact.email">{{ contact.email }}</a><br></p>
     <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
         Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
         Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
